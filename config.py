@@ -1,0 +1,37 @@
+# Configuración de la pantalla
+ANCHO_PANTALLA = 1280
+ALTO_PANTALLA = 720
+FPS = 60
+
+# Configuración del jugador
+VELOCIDAD_JUGADOR = 5
+FUERZA_SALTO = -15
+GRAVEDAD = 0.5
+VELOCIDAD_CAIDA_MAX = 15
+
+# Configuración del nivel
+ANCHO_NIVEL = 3840
+ALTO_NIVEL = 1440
+MARGEN_VIEWPORT = 256
+
+# Estados del juego
+ESTADO_MENU = 0
+ESTADO_JUGANDO = 1
+ESTADO_PAUSA = 2
+ESTADO_NIVEL_COMPLETADO = 3
+ESTADO_MUERTE = 4
+ESTADO_VICTORIA = 5
+
+# Colores
+NEGRO = (0, 0, 0)
+BLANCO = (255, 255, 255)
+ROJO = (255, 0, 0)
+VERDE = (0, 255, 0)
+AZUL = (0, 0, 255)
+
+# Configuración de enemigos
+VELOCIDAD_ENEMIGO_BASICO = 3
+DISTANCIA_DETECCION = 300
+
+# Configuración de powerups
+DURACION_POWERUP = 10  # segundos 
