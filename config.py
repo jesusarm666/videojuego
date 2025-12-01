@@ -1,3 +1,8 @@
+# config.py
+# ===========================
+# CONFIGURACIÓN GENERAL
+# ===========================
+
 # Configuración de la pantalla
 ANCHO_PANTALLA = 1280
 ALTO_PANTALLA = 720
@@ -10,8 +15,9 @@ GRAVEDAD = 0.5
 VELOCIDAD_CAIDA_MAX = 15
 
 # Configuración del nivel
-ANCHO_NIVEL = 3840
-ALTO_NIVEL = 1440
+# Reducimos la longitud máxima del nivel para niveles "moderados"
+ANCHO_NIVEL = 2400   # <--- reducido desde 3840 a 2400
+ALTO_NIVEL = 1080
 MARGEN_VIEWPORT = 256
 
 # Estados del juego
@@ -28,10 +34,32 @@ BLANCO = (255, 255, 255)
 ROJO = (255, 0, 0)
 VERDE = (0, 255, 0)
 AZUL = (0, 0, 255)
+AMARILLO = (255, 255, 0)
+CYAN = (0, 255, 255)
+MAGENTA = (255, 0, 255)
 
-# Configuración de enemigos
+# Enemigos
 VELOCIDAD_ENEMIGO_BASICO = 3
 DISTANCIA_DETECCION = 300
 
-# Configuración de powerups
-DURACION_POWERUP = 10  # segundos 
+# Powerups
+DURACION_POWERUP = 10  # segundos
+
+# --- GENERACIÓN / LIMPIEZA ---
+GENERAR_ADELANTE_DIST = ANCHO_PANTALLA * 2
+PROB_MOBILE_PLATFORM = 0.25
+PROB_ENEMY_SPAWN = 0.35
+MIN_GAP = 140
+MAX_GAP = 300
+PLATFORM_WIDTH_OPTIONS = [120, 140, 160, 180, 200]
+CLEANUP_BUFFER = 600
+
+# ===========================
+# CAMPAÑA DE 6 NIVELES
+# ===========================
+TOTAL_NIVELES = 6
+
+# ===========================
+# LÍMITE DE MUERTE (caída)
+# ===========================
+LIMITE_MUERTE_Y = ALTO_NIVEL + 300
